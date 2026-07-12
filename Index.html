@@ -1,258 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Calculador de tiempo transcurrido y operaciones de horas (2025-2026)</title>
-  <style>
-    :root{--bg:#fff;--text:#000;--button-bg:#0b74de;--button-text:#fff;--result-bg:#f6f9ff;--result-border:#e6f0ff; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
-    [data-theme='dark']{--bg:#1e1e1e;--text:#f0f0f0;--button-bg:#4a90e2;--button-text:#fff;--result-bg:#2c2c2c;--result-border:#444;}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <title>Portafolio.</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <nav class="barradenavegacion">
+            <div class="ancho-maximo">
+                <div class="logo"><a href="#inicio">DSF <span> Diseño</span></a></div>
+                <ul class="menu">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#contenido">ACERCA DE</a></li>
+                    <li><a href="#habilidades">INMUEBLE</a></li>
+                    <li><a href="#servicio">SERVICIOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- Cabezera de la pagina-->
+        <section class="inicio" id="inicio">
+            <div class="ancho-maximo">
+                <div class="row">
+                   <div class="contenido-inicio">
+                        <div class="texto-1">HOLA, SOY  DSF</div>
+                        <div class="texto-2">LA MEJOR OPCION DE</div>
+                        <div class="texto-3">DESALLORO QUE DARA VIDA A TUS<span> SUEÑOS </span></div>
+                    </div>
+                </div>
+            </div>
 
-    body{background:var(--bg);color:var(--text);max-width:720px;margin:32px auto;padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:background .3s,color .3s}
-    h1{font-size:1.25rem;margin-bottom:.25rem}
-    label{display:block;margin-top:12px;font-weight:600}
-    input{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #ddd;background:#fff;color:#000}
-    [data-theme='dark'] input{background:#2c2c2c;color:#f0f0f0;border:1px solid #555}
-    .row{display:flex;gap:12px}
-    button{margin-top:14px;padding:10px 14px;border-radius:10px;border:none;background:var(--button-bg);color:var(--button-text);font-weight:600;cursor:pointer;transition:background .3s,color .3s}
-    .result{margin-top:16px;padding:12px;border-radius:8px;background:var(--result-bg);border:1px solid var(--result-border);transition:background .3s,color .3s}
-    small{color:#666}
-    .hint{margin-top:8px;color:#444}
-    #themeToggle{position:fixed;top:12px;left:12px;padding:8px 12px;border:none;border-radius:8px;background:var(--button-bg);color:var(--button-text);cursor:pointer;z-index:1000;}
-  </style>
-</head>
-<body>
-  <button id="themeToggle">🌙</button>
-  <h1>Calculador de tiempo (2025 - 2026)</h1>
-  <p class="hint">Las fechas se guardan automáticamente y puedes usar años 2025 y 2026.</p>
+        </section>
+        <!-- 1ra seccion sobre mi -->
+        <section class="contenido" id="contenido">
+            <div class="ancho-maximo">
+                <h2 class="titulo"  data-aos="fade-in">!Sobre mí¡</h2>
+                <div class="sobre-contenido">
+                    <div class="columna izquierda">
+                    <img src="imagenes/perfil2.jpg" alt="">
+                    </div>
+                    <div class="columna derecha">
+                        <div class="texto">Empresa dedicada a la<span> Remodelacion</span></div>
+                        <p>de espacios, ofreciendo soluciones integrales para transformar tu hogar o negocio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <label for="start">Fecha y hora de inicio</label>
-  <input id="start" type="datetime-local" min="2025-01-01T00:00" max="2026-12-31T23:59" />
+    <!-- skills section start -->
+    <section class="habilidades" id="habilidades">
+      <div class="ancho-maximo">
+          <h2 class="titulo">Mis habilidades</h2>
+          <div class="contenido-habilidades">
+            <div class="columna izquierda">
+                <div class="barras">
+                    <div class="informacions">
+                        <span>JAVA</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line">
+                    <div class="skill-per" data-progress="80"></div>
+                </div>
+                </div>
+                <div class="barras">
+                    <div class="informacions">
+                        <span>C#</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line">
+                        <div class="skill-per" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="barras">
+                    <div class="informacions">
+                        <span>HTML</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="line">
+                        <div class="skill-per" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="barras">
+                    <div class="informacions">
+                        <span>PHP</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="line">
+                        <div class="skill-per" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+              <div class="columna derecha">
+                  <div class="barra">
+                      <div class="informacion">
+                          <span>CSS</span>
+                          <span>75%</span>
+                      </div>
+                      <div class="linea">
+                          <div class="skill-per" data-progress="75"></div>
+                      </div>
+                  </div>
+                  <div class="barra">
+                    <div class="informacion">
+                        <span>ANGULAR</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="linea">
+                        <div class="skill-per" data-progress="50"></div>
+                    </div>
+                </div><div class="barra">
+                  <div class="informacion">
+                      <span>LARAVEL</span>
+                      <span>50%</span>
+                  </div>
+                  <div class="linea">
+                      <div class="skill-per" data-progress="50"></div>
+                  </div>
+              </div><div class="barra">
+                <div class="informacion">
+                    <span>MySQL</span>
+                    <span>80%</span>
+                </div>
+                <div class="linea">
+                    <div class="skill-per" data-progress="80"></div>
+                </div>
+            </div>
+              </div>
+          </div>
+      </div>
+  </section>
+   <!-- services section start -->
+   <section class="servicio" id="servicio">
+    <div class="ancho-maximo">
+        <h2 class="titulo">Mi Servicio</h2>
+        <div class="servicio-contentido">
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-paint-brush"></i>
+                    <div class="texto">Diseño Web</div><br/>
+                    <p>Las mejores ideas vienen como chistes. Haz tus pensamientos tan divertidos como puedas.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-laptop-house"></i>
+                    <div class="texto">Mantenimiento</div><br/>
+                    <p>Por cada error que se le atribuye a una PC siempre se encuentran al menos dos errores humanos: el de culpar a la PC y el de confiar en ella.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-headset"></i>
+                    <div class="texto">Soporte técnico a distancia</div><br/>
+                    <p>Soporte al cliente, por diversos medios con la finalidad de hallarle solución al problema que se le haya presentado.</p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</section>
+  <section class="paginas" id="paginas">
 
-  <label for="end">Fecha y hora de fin</label>
-  <input id="end" type="datetime-local" min="2025-01-01T00:00" max="2026-12-31T23:59" />
+        <div class="ancho-maximo">
+            
+            <h2 class="titulo">Diseños</h2>
 
-  <div class="row">
-    <button id="calc">Calcular diferencia</button>
-    <button id="swap" type="button">Intercambiar</button>
-    <button id="now" type="button">Poner ahora</button>
-  </div>
+        </div>
+</section>
+    
+    <footer>
+        <section class="contacto" id="contacto"></section>
+            <div class="container-footer-all">
+             
+                 <div class="container-body">
+     
+                     <div class="colum1">
+                         <h1>Objetivo</h1>
+     
+                         <p>Si te gusta sentirte unico, si aprecias el valor de la diferencia.</p>
+                         <p>Si te gusta inovar y buscar nuevos retos y experencias.</p>
+                         <p>Bienvenido al lugar donde podras alcanzar tus metas, 
+                            soluciones tecnologinas en entornos digitales que te llevaran a lo mas alto, 
+                            por que la calidad y superación y crecimiento es mi objetivo.</p>     
+                     </div>
+     
+                     <div class="colum2">
+     
+                         <h1>Redes Sociales</h1>
+     
+                         <div class="row">
+                            <div class="redes-sociales">
+                                <div class="contenedor-icono">
+                                    <a href="http://www.facebook.com/LuisMartinezLSC" target="_blank" class="facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <label>Sigueme en Facebook</label>
+                         </div> <div class="row">
+                            <div class="redes-sociales">
+                                <div class="contenedor-icono">
+                                    <a
+                                       href="http://www.instagram.com/Ichepe" target="_blank" class="instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <label>Sigueme en Instagram</label>
+                         </div>
+                     </div>
+     
+                     <div class="colum3">
+     
+                         <h1>Informacion Contacto</h1>
+     
+                         <div class="row2">
+                             <img src="imagenes/smartphone.png">
+                             <label>+52 961-3592227</label>
+                         </div>
+     
+                         <div class="row2">
+                             <img src="imagenes/contact.png">
+                              <label>jose_luisLSC@hotmail.com</label>
+                         </div>
+     
+                     </div>
+     
+                 </div>
+             
+             </div>
+        </section>
+    </footer>
+    </section>
 
-  <div class="result" id="result">Resultado aparecerá aquí.</div>
-
-  <hr style="margin-top:24px;margin-bottom:16px">
-  <h2>Operaciones de horas</h2>
-
-  <label for="hours1">Horas/minutos 1</label>
-  <input id="hours1" type="text" placeholder="Ej: 12:30" />
-
-  <label for="hours2">Horas/minutos 2</label>
-  <input id="hours2" type="text" placeholder="Ej: 5:45" />
-
-  <div class="row">
-    <button id="sum">Sumar</button>
-    <button id="subtract">Restar</button>
-  </div>
-
-  <div class="result" id="resultOps">Resultado de operación aparecerá aquí.</div>
-
-  <script>
-    const startEl = document.getElementById('start');
-    const endEl = document.getElementById('end');
-    const resultEl = document.getElementById('result');
-    const themeToggle = document.getElementById('themeToggle');
-
-    const hours1El = document.getElementById('hours1');
-    const hours2El = document.getElementById('hours2');
-    const resultOpsEl = document.getElementById('resultOps');
-
-    let darkMode = localStorage.getItem('theme') === 'dark';
-    document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
-    themeToggle.textContent = darkMode ? '☀️' : '🌙';
-
-    themeToggle.addEventListener('click', () => {
-      darkMode = !darkMode;
-      document.body.setAttribute('data-theme', darkMode ? 'dark' : 'light');
-      localStorage.setItem('theme', darkMode ? 'dark' : 'light');
-      themeToggle.textContent = darkMode ? '☀️' : '🌙';
-    });
-
-    function saveData() {
-      localStorage.setItem('start', startEl.value);
-      localStorage.setItem('end', endEl.value);
-      localStorage.setItem('h1', hours1El.value);
-      localStorage.setItem('h2', hours2El.value);
-    }
-
-    function loadData() {
-      startEl.value = localStorage.getItem('start') || '';
-      endEl.value = localStorage.getItem('end') || '';
-      hours1El.value = localStorage.getItem('h1') || '';
-      hours2El.value = localStorage.getItem('h2') || '';
-    }
-
-    function calculate() {
-      if (!startEl.value || !endEl.value) return;
-      const diff = new Date(endEl.value) - new Date(startEl.value);
-      const mins = Math.floor(diff / 60000);
-      const h = Math.floor(mins / 60);
-      const m = mins % 60;
-      resultEl.textContent = `Resultado: ${h} horas ${m} minutos`;
-    }
-
-    function parseHourString(str) {
-      const [h, m] = str.split(':').map(Number);
-      if (isNaN(h) || isNaN(m)) return null;
-      return h * 60 + m;
-    }
-
-    function formatHourMinutes(totalMinutes) {
-      const sign = totalMinutes < 0 ? '-' : '';
-      totalMinutes = Math.abs(totalMinutes);
-      const h = Math.floor(totalMinutes / 60);
-      const m = totalMinutes % 60;
-      return `${sign}${h}h ${m}m`;
-    }
-
-    document.getElementById('sum').onclick = () => {
-      const r = parseHourString(hours1El.value) + parseHourString(hours2El.value);
-      resultOpsEl.textContent = 'Resultado: ' + formatHourMinutes(r);
-      saveData();
-    };
-
-    document.getElementById('subtract').onclick = () => {
-      const r = parseHourString(hours1El.value) - parseHourString(hours2El.value);
-      resultOpsEl.textContent = 'Resultado: ' + formatHourMinutes(r);
-      saveData();
-    };
-
-    document.getElementById('calc').onclick = () => { calculate(); saveData(); };
-
-    document.getElementById('swap').onclick = () => {
-      const a = startEl.value;
-      startEl.value = endEl.value;
-      endEl.value = a;
-      saveData();
-    };
-
-    document.getElementById('now').onclick = () => {
-      const now = new Date();
-      const pad = n => String(n).padStart(2, '0');
-      const val = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}T${pad(now.getHours())}:${pad(now.getMinutes())}`;
-      endEl.value = val;
-      saveData();
-    };
-
-    startEl.onchange = saveData;
-    endEl.onchange = saveData;
-    hours1El.oninput = saveData;
-    hours2El.oninput = saveData;
-
-    loadData();
-    calculate();
-  
-
-    // ====== KM CALCULO ======
-window.addEventListener('DOMContentLoaded', () => {
-  const kmStartEl = document.getElementById('kmStart');
-  const kmEndEl = document.getElementById('kmEnd');
-  const kmResultEl = document.getElementById('kmResult');
-
-  function calculateKM() {
-    const start = parseFloat(kmStartEl.value);
-    const end = parseFloat(kmEndEl.value);
-    if (isNaN(start) || isNaN(end)) {
-      kmResultEl.textContent = 'Ingresa valores válidos en KM';
-      return;
-    }
-    const diff = end - start;
-    kmResultEl.textContent = `Recorrido: ${diff} km`;
-    localStorage.setItem('kmStart', kmStartEl.value);
-    localStorage.setItem('kmEnd', kmEndEl.value);
-  }
-
-  document.getElementById('calcKM').onclick = calculateKM;
-
-  kmStartEl.oninput = () => localStorage.setItem('kmStart', kmStartEl.value);
-  kmEndEl.oninput = () => localStorage.setItem('kmEnd', kmEndEl.value);
-
-  // cargar KM guardados
-  kmStartEl.value = localStorage.getItem('kmStart') || '';
-  kmEndEl.value = localStorage.getItem('kmEnd') || '';
-});
-
-  </script>
-
-  <hr style="margin-top:24px;margin-bottom:16px">
-  <h2>Cálculo de kilómetros</h2>
-
-  <label for="kmStart">KM inicio</label>
-  <input id="kmStart" type="number" placeholder="Ej: 12500" />
-
-  <label for="kmEnd">KM final</label>
-  <input id="kmEnd" type="number" placeholder="Ej: 12680" />
-
-  <div class="row">
-    <button id="calcKM">Calcular KM</button>
-  </div>
-
-  <div class="result" id="kmResult">Resultado de KM aparecerá aquí.</div>
-
-
-  <hr style="margin-top:24px;margin-bottom:16px">
-  <h2>Rendimiento y costo</h2>
-
-  <label for="litros">Litros consumidos</label>
-  <input id="litros" type="number" placeholder="Ej: 20" />
-
-  <label for="precio">Precio por litro</label>
-  <input id="precio" type="number" placeholder="Ej: 24" />
-
-  <div class="row">
-    <button id="calcRend">Calcular</button>
-  </div>
-
-  <div class="result" id="rendResult">Resultado de rendimiento y costo aparecerá aquí.</div>
-
-  <script>
-    const litrosEl = document.getElementById('litros');
-    const precioEl = document.getElementById('precio');
-    const rendResultEl = document.getElementById('rendResult');
-
-    function calcularRendimiento() {
-      const kmInicio = parseFloat(localStorage.getItem('kmStart'));
-      const kmFin = parseFloat(localStorage.getItem('kmEnd'));
-      const litros = parseFloat(litrosEl.value);
-      const precio = parseFloat(precioEl.value);
-
-      if (isNaN(kmInicio) || isNaN(kmFin) || isNaN(litros) || isNaN(precio)) {
-        rendResultEl.textContent = 'Completa todos los campos correctamente';
-        return;
-      }
-
-      const recorrido = kmFin - kmInicio;
-      const rendimiento = recorrido / litros;
-      const costoTotal = litros * precio;
-      const costoPorKm = costoTotal / recorrido;
-
-      rendResultEl.innerHTML = `
-        Rendimiento: ${rendimiento.toFixed(2)} km/l <br>
-        Costo total: $${costoTotal.toFixed(2)} <br>
-        Costo por km: $${costoPorKm.toFixed(2)}
-      `;
-
-      localStorage.setItem('litros', litrosEl.value);
-      localStorage.setItem('precio', precioEl.value);
-    }
-
-    document.getElementById('calcRend').onclick = calcularRendimiento;
-
-    litrosEl.value = localStorage.getItem('litros') || '';
-    precioEl.value = localStorage.getItem('precio') || '';
-
-    litrosEl.oninput = () => localStorage.setItem('litros', litrosEl.value);
-    precioEl.oninput = () => localStorage.setItem('precio', precioEl.value);
-  </script>
-
-</body>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="js/funciones.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </body>
 </html>
