@@ -124,7 +124,7 @@ section .titulo::after {
 }
 /* estilo del menu */
 .menu-btn {
-    color: #fff;
+    color: #373737;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -206,71 +206,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E4E7E4", en
     text-align: justify;
 }
 
-
-
-
-/* seccion de porcentaje de lenguajes  */
-.habilidades .contenido-habilidades .columna {
-    
-    width: calc(100%);
-    width: 50%;
-    height: auto;
-    padding: 30px 30px;
-    box-shadow: 2px 2px 5px #999;
-}
-.habilidades .contenido-habilidades .izquierda .barras{
-    margin-bottom: 15px;
-}
-.habilidades .contenido-habilidades .izquierda .informacions{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.habilidades .contenido-habilidades .izquierda span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.habilidades .contenido-habilidades .izquierda .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-
-.habilidades .contenido-habilidades .derecha .barra{
-    margin-bottom: 15px;
-}
-.habilidades .contenido-habilidades .derecha .informacion{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.habilidades .contenido-habilidades .derecha span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.habilidades .contenido-habilidades .derecha .linea{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-
-.skill-per{
-    height: 5px;
-    background-color: #87a3a3;
-    border-radius: 8px;
-    width: 0;
-    transition: 1s linear;
-   position: relative;
-}
-.per{
-    opacity: 1;
-}
-
 /* services section styling */
+
 .servicio{
     color:#fff;
     background: #87a3a3;
